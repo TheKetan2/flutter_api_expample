@@ -32,6 +32,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   Object apiData = {};
+  bool isLoading = false;
 
   String searchTerm = "iconbutton";
 
@@ -44,6 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
     print(searchResult);
     setState(() {
+      isLoading = false;
       apiData = searchResult;
     });
   }
@@ -81,6 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 print(searchTerm);
                 setState(() {});
                 _fetchData(searchTerm);
+                isLoading = true;
               },
             ),
           ),
@@ -93,23 +96,25 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       body: Center(
-        child: Container(
-          padding: EdgeInsets.all(
-            10.0,
-          ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Text(
-                "${apiData}",
-                style: TextStyle(
-                  fontSize: 16.0,
-                  fontWeight: FontWeight.bold,
+        child: isLoading
+            ? CircularProgressIndicator()
+            : Container(
+                padding: EdgeInsets.all(
+                  10.0,
+                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      "${apiData}",
+                      style: TextStyle(
+                        fontSize: 16.0,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
                 ),
               ),
-            ],
-          ),
-        ),
       ),
       // This trailing comma makes auto-formatting nicer for build methods.
     );
