@@ -18,7 +18,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   dynamic apiData;
-  String name = "";
+  String name = null;
   String widgetUrl = "";
   bool isLoading = false;
   String baseUrl = "https://api.flutter.dev/flutter/";
@@ -37,6 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
     String url = "https://api.flutter.dev/flutter/index.json";
     setState(
       () {
+        name = "";
         isLoading = true;
       },
     );
@@ -113,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
         body: Center(
-          child: name == ""
+          child: name == null
               ? Center(child: Text("Search Widget"))
               : isLoading
                   ? CircularProgressIndicator()
