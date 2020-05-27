@@ -1,3 +1,4 @@
 ### Fetching data from Flutter api 
 
-![Screen](assets/screen.gif)
+![Flutter API Example](assets/screen.gif)
+![CardList Example](assets/cardlist.gif)
