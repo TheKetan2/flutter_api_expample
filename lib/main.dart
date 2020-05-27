@@ -143,18 +143,21 @@ class _MyHomePageState extends State<MyHomePage> {
                             SizedBox(
                               height: 10,
                             ),
-                            Container(
-                              width: double.infinity,
-                              color: Theme.of(context).primaryColor,
-                              padding: EdgeInsets.symmetric(vertical: 20),
-                              child: Text(
-                                "Open $name Docs",
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 20,
+                            InkWell(
+                              child: Container(
+                                width: double.infinity,
+                                color: Theme.of(context).primaryColor,
+                                padding: EdgeInsets.symmetric(vertical: 20),
+                                child: Text(
+                                  "Open $name Docs",
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20,
+                                  ),
                                 ),
                               ),
+                              onTap: _launchURL,
                             ),
                           ],
                         ),
