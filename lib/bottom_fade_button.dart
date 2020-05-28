@@ -57,10 +57,11 @@ class BottomFadeButton extends StatelessWidget {
                           color: Colors.blueAccent,
                         ),
                         child: Text(
-                          "Button",
+                          "BUY TICKETS",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 20,
+                            color: Colors.white,
                           ),
                         ),
                       ),
