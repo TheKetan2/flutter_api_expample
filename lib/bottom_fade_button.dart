@@ -59,10 +59,9 @@ class BottomFadeButton extends StatelessWidget {
                         child: Text(
                           "BUY TICKETS",
                           style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 20,
-                            color: Colors.white,
-                          ),
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                              color: Colors.white),
                         ),
                       ),
                       onTap: () {
