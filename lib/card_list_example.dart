@@ -1,6 +1,10 @@
 import "package:flutter/material.dart";
 
 class CardList extends StatelessWidget {
+  final BuildContext ctx;
+
+  const CardList({Key key, this.ctx}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
