@@ -9,5 +9,5 @@ import 'package:url_launcher/url_launcher.dart';
 import './flutter_api_example.dart';
 
 void main() {
-  runApp(Tutorial());
+  runApp(CardList());
 }
