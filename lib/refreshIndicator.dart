@@ -19,6 +19,9 @@ class _StartHomeState extends State<Home> {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
+      appBar: AppBar(
+        title: Text("RefreshIndicator Example"),
+      ),
       resizeToAvoidBottomPadding: false,
       body: RefreshIndicator(
         onRefresh: resfreshEventList,
@@ -80,7 +83,7 @@ class _StartHomeState extends State<Home> {
   }
 
   Future<Null> resfreshEventList() async {
-    // await Future.delayed(Duration(seconds: 2));
+    await Future.delayed(Duration(seconds: 2));
 
     // setState(() {
     //   events = EventsList();
