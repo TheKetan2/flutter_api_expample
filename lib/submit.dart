@@ -15,50 +15,123 @@ class Submit extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.blueGrey,
-        appBar: AppBar(
-          title: Text('Create Workouts'),
-          centerTitle: true,
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        title: Text('Create Workouts'),
+        centerTitle: true,
+      ),
+      body: Container(
+        height: 400,
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Text(
+                    'Exercise Name :',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      color: Colors.black,
+                    ),
+                  ),
+                  Text(
+                    '${name}',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      color: Colors.black,
+                    ),
+                  ),
+                ],
+              ),
+              Divider(),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Text(
+                    'Primary Muscle Group :',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      color: Colors.black,
+                    ),
+                  ),
+                  Text(
+                    '${pmg}',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      color: Colors.black,
+                    ),
+                  ),
+                ],
+              ),
+              Divider(),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Text(
+                    'Secondary Muscle Group :',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      color: Colors.black,
+                    ),
+                  ),
+                  Text(
+                    '${smg}',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      color: Colors.black,
+                    ),
+                  ),
+                ],
+              ),
+              Divider(),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Text(
+                    'Reps :',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      color: Colors.black,
+                    ),
+                  ),
+                  Text(
+                    '${rep}',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      color: Colors.black,
+                    ),
+                  ),
+                ],
+              ),
+              Divider(),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Text(
+                    'Sets :',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      color: Colors.black,
+                    ),
+                  ),
+                  Text(
+                    '${sets}',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      color: Colors.black,
+                    ),
+                  ),
+                ],
+              ),
+              Divider(),
+            ],
+          ),
         ),
-        body: Container(
-            child: Padding(
-                padding: const EdgeInsets.all(20.0),
-                child: Column(children: <Widget>[
-                  Text(
-                    'Exercise Name : ${name}',
-                    style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.white,
-                        fontWeight: FontWeight.w200),
-                  ),
-                  Text(
-                    'Primary Muscle Group : ${pmg} ',
-                    style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.white,
-                        fontWeight: FontWeight.w200),
-                  ),
-                  Text(
-                    'Secondary Muscle Group : ${smg} ',
-                    style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.white,
-                        fontWeight: FontWeight.w200),
-                  ),
-                  Text(
-                    'Reps : ${rep}',
-                    style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.white,
-                        fontWeight: FontWeight.w200),
-                  ),
-                  Text(
-                    'Sets : ${sets}',
-                    style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.white,
-                        fontWeight: FontWeight.w200),
-                  ),
-                ]))));
+      ),
+    );
   }
 }

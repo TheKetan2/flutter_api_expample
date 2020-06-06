@@ -12,7 +12,8 @@ import 'package:stack_flutter_exp/workout.dart';
 import 'package:url_launcher/url_launcher.dart';
 import './flutter_api_example.dart';
 import "./submit.dart";
+import './change_color.dart';
 
 void main() {
-  runApp(Workout());
+  runApp(ColorChange());
 }
