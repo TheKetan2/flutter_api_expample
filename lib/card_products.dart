@@ -21,20 +21,124 @@ class _Cart_productState extends State<Cart_product> {
       "ice-cream": "1 scoops",
       "sugar": "2 cube"
     },
+    {
+      "name": "Avocado",
+      "img": "assets/text_bg.jpg",
+      "price": 180,
+      "ice-cream": "2 scoops",
+      "sugar": "3 cube"
+    },
+    {
+      "name": "Mango",
+      "img": "assets/text_bg.jpg",
+      "price": 180,
+      "ice-cream": "1 scoops",
+      "sugar": "2 cube"
+    },
+    {
+      "name": "Avocado",
+      "img": "assets/text_bg.jpg",
+      "price": 180,
+      "ice-cream": "2 scoops",
+      "sugar": "3 cube"
+    },
+    {
+      "name": "Mango",
+      "img": "assets/text_bg.jpg",
+      "price": 180,
+      "ice-cream": "1 scoops",
+      "sugar": "2 cube"
+    },
+    {
+      "name": "Avocado",
+      "img": "assets/text_bg.jpg",
+      "price": 180,
+      "ice-cream": "2 scoops",
+      "sugar": "3 cube"
+    },
+    {
+      "name": "Mango",
+      "img": "assets/text_bg.jpg",
+      "price": 180,
+      "ice-cream": "1 scoops",
+      "sugar": "2 cube"
+    },
+    {
+      "name": "Avocado",
+      "img": "assets/text_bg.jpg",
+      "price": 180,
+      "ice-cream": "2 scoops",
+      "sugar": "3 cube"
+    },
+    {
+      "name": "Mango",
+      "img": "assets/text_bg.jpg",
+      "price": 180,
+      "ice-cream": "1 scoops",
+      "sugar": "2 cube"
+    },
+    {
+      "name": "Avocado",
+      "img": "assets/text_bg.jpg",
+      "price": 180,
+      "ice-cream": "2 scoops",
+      "sugar": "3 cube"
+    },
+    {
+      "name": "Mango",
+      "img": "assets/text_bg.jpg",
+      "price": 180,
+      "ice-cream": "1 scoops",
+      "sugar": "2 cube"
+    },
+    {
+      "name": "Avocado",
+      "img": "assets/text_bg.jpg",
+      "price": 180,
+      "ice-cream": "2 scoops",
+      "sugar": "3 cube"
+    },
+    {
+      "name": "Mango",
+      "img": "assets/text_bg.jpg",
+      "price": 180,
+      "ice-cream": "1 scoops",
+      "sugar": "2 cube"
+    },
+    {
+      "name": "Avocado",
+      "img": "assets/text_bg.jpg",
+      "price": 180,
+      "ice-cream": "2 scoops",
+      "sugar": "3 cube"
+    },
+    {
+      "name": "Mango",
+      "img": "assets/text_bg.jpg",
+      "price": 180,
+      "ice-cream": "1 scoops",
+      "sugar": "2 cube"
+    },
   ];
   @override
   Widget build(BuildContext context) {
-    return new ListView.builder(
-      itemCount: 2,
-      itemBuilder: (context, index) {
-        return new Single_cart_prod(
-          prod_name: cart_list[index]['name'],
-          prod_img: cart_list[index]['img'],
-          prod_price: cart_list[index]['price'],
-          prod_ice_cream: cart_list[index]['ice-cream'],
-          prod_sugar: cart_list[index]['sugar'],
-        );
-      },
+    return Scaffold(
+      backgroundColor: Colors.amberAccent,
+      appBar: AppBar(
+        title: Text("Card Card Example"),
+      ),
+      body: ListView.builder(
+        itemCount: cart_list.length,
+        itemBuilder: (context, index) {
+          return new Single_cart_prod(
+            prod_name: cart_list[index]['name'],
+            prod_img: cart_list[index]['img'],
+            prod_price: cart_list[index]['price'],
+            prod_ice_cream: cart_list[index]['ice-cream'],
+            prod_sugar: cart_list[index]['sugar'],
+          );
+        },
+      ),
     );
   }
 }
