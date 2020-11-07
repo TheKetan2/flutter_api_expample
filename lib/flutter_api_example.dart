@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import "package:http/http.dart" as http;
-import 'package:url_launcher/url_launcher.dart';
+// import 'package:url_launcher/url_launcher.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
@@ -22,11 +22,11 @@ class _MyHomePageState extends State<MyHomePage> {
   String searchTerm = "iconbutton";
 
   _launchURL() async {
-    if (await canLaunch(baseUrl + widgetUrl)) {
-      await launch(baseUrl + widgetUrl);
-    } else {
-      throw 'Could not launch';
-    }
+    // if (await canLaunch(baseUrl + widgetUrl)) {
+    //   await launch(baseUrl + widgetUrl);
+    // } else {
+    //   throw 'Could not launch';
+    // }
   }
 
   _fetchData(String widgetName) async {
