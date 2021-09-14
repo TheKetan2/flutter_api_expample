@@ -22,7 +22,7 @@ class _StartHomeState extends State<Home> {
       appBar: AppBar(
         title: Text("RefreshIndicator Example"),
       ),
-      resizeToAvoidBottomPadding: false,
+      // resizeToAvoidBottomPadding: false,
       body: RefreshIndicator(
         onRefresh: resfreshEventList,
         child: SingleChildScrollView(

@@ -27,7 +27,7 @@ class _MyNavigationState extends State<MyNavigation> {
       backgroundColor: Colors.transparent,
       body: children.elementAt(_currentIndex),
       bottomNavigationBar: CustomBottomNavigationBar(
-        mainBgColor: Colors.red,
+        // mainBgColor: Colors.red,
         backgroundColor: Colors.amber,
         items: [
           CustomBottomNavigationBarItem(
